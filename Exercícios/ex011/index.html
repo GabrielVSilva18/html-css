@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Site com imagens dinâmicas</h1>
+    <p>Experimente abrir o site em diferentes dispositivos ou altere o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem">
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>Apredendo a reproduzir áudios em HTML5</p>
+    <!-- MP3, WAV e OGG
+    <audio src="midia/Fart Meme Sound.mp3" controls autoplay></audio>
+    Outra forma de reproduzir áudios em sites a seguir -->
+    <audio preload="metadata" controls>
+        <source src="midia/A bobina, AAAAAAAAAAAAA bobina!!!... Pode rodar.mp3" type="audio/mp3">
+    <p>Caso não escute nenhum áudio você pode acessá-los a seguir:</p>
+    <ul type="square">
+        <li><a href="midia/A bobina, AAAAAAAAAAAAA bobina!!!... Pode rodar.mp3">Áudio A bobina</a></li>
+        <li><a href="midia/Fart Meme Sound.mp3">Áudio wet fart noise</a></li>
+    </ul>
+    </audio>
+</body>
+</html>

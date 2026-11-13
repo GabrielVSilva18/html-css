@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+         @font-face {
+            font-family: 'OldLondon';
+            src: url(font/OldLondon.ttf) format(truetype);
+            src: url(font/Olondona.otf) format(opentype);
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .linkexterno {
+            color: greenyellow;
+            text-decoration: none;
+        }
+        .linkexterno:visited {
+            color: darkgreen;
+        }
+        .linkexterno:hover {
+            font-size: 1.3em;
+            font-weight: bolder;
+            color: red;
+            text-decoration: overline underline;
+        }
+        .linkexterno.especial:active {
+            color: rgb(4, 4, 80);
+            font-size: 10em;
+            font-weight: bolder;
+            font-family: OldLondon;
+        }
+        .linkexterno.especial::before {
+            content: '[RELÍQUIA] > ';
+            font-weight: 100;
+            font-size: 1em;
+            color: rgb(172, 172, 2);
+            text-decoration: overline underline white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a class="linkexterno" href="https://youtube.com/@lucaodopao9190?si=dSl4s_7imApvUtgh" target="_blank" rel="noopener noreferrer nofollow">Canal do Lucão</a></li>
+        <li><a class="linkexterno" href="https://youtube.com/@dawiamigo?si=vFHUqXXbNdMyFLMA" target="_blank" rel="nofollow noopener noreferrer">Canal do Dimbinho</a></li>
+        <li><a class="linkexterno especial" href="https://youtu.be/k5nMcQtHhdU?si=T3KKcMjVIgrqzX0r" target="_blank" rel="no referrer noopener nofollow">Vídeo Histórico</a></li>
+    </ul>
+    <a href="pseudoclasses.html">Voltar</a>
+</body>
+</html>
